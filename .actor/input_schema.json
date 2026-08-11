@@ -1,0 +1,37 @@
+{
+    "title": "Insider Trading Alert Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "ticker": {
+            "title": "Ticker symbol",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Stock ticker (e.g. \"AAPL\") to get insider filings for one company. Leave blank to scan the market-wide feed of the newest Form 4 filings across all companies."
+        },
+        "transactionType": {
+            "title": "Transaction type",
+            "type": "string",
+            "editor": "select",
+            "description": "Filter to shares acquired (buys), disposed (sells), or all transactions.",
+            "enum": ["all", "acquired", "disposed"],
+            "enumTitles": ["All", "Acquired (buys)", "Disposed (sells)"],
+            "default": "all"
+        },
+        "minTransactionValue": {
+            "title": "Minimum transaction value (USD)",
+            "type": "integer",
+            "editor": "number",
+            "description": "Only return transactions worth at least this much (shares x price). Leave blank for no minimum."
+        },
+        "maxFilings": {
+            "title": "Max filings to scan",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many recent Form 4 filings to fetch and parse. Each filing can contain multiple transactions.",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 50
+        }
+    }
+}

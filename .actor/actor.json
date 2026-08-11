@@ -1,0 +1,12 @@
+{
+    "actorSpecification": 1,
+    "name": "insider-trading-alert",
+    "title": "Insider Trading Alert — Executive Buy & Sell Signals",
+    "description": "Track SEC Form 4 filings: which company executives, directors, and 10% owners just bought or sold stock, how many shares, at what price. Search market-wide or by ticker.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "../Dockerfile"
+}

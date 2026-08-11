@@ -1,0 +1,16 @@
+{
+    "name": "insider-trading-alert",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Track SEC Form 4 insider trading filings by ticker or market-wide via the official EDGAR API.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6",
+        "fast-xml-parser": "^5.7.0"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    }
+}
