@@ -7,7 +7,8 @@ market-wide feed of the newest insider filings across all companies.
 
 Built for investors and analysts screening for insider conviction (or
 concern), and sales/research teams using insider buying as a signal
-alongside other buying-intent data.
+alongside other buying-intent data. Replaces manually paging through EDGAR's
+Form 4 feed or a ticker's individual filing history by hand.
 
 ## Input
 
