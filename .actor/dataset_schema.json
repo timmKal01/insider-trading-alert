@@ -1,0 +1,78 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "issuerTicker",
+                    "issuerName",
+                    "reportingOwnerName",
+                    "officerTitle",
+                    "transactionDate",
+                    "transactionCode",
+                    "acquiredDisposedCode",
+                    "shares",
+                    "pricePerShare",
+                    "transactionValue",
+                    "sharesOwnedAfter",
+                    "filingUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "issuerTicker": {
+                        "label": "Issuer ticker",
+                        "format": "text"
+                    },
+                    "issuerName": {
+                        "label": "Issuer name",
+                        "format": "text"
+                    },
+                    "reportingOwnerName": {
+                        "label": "Reporting owner name",
+                        "format": "text"
+                    },
+                    "officerTitle": {
+                        "label": "Officer title",
+                        "format": "text"
+                    },
+                    "transactionDate": {
+                        "label": "Transaction date",
+                        "format": "text"
+                    },
+                    "transactionCode": {
+                        "label": "Transaction code",
+                        "format": "text"
+                    },
+                    "acquiredDisposedCode": {
+                        "label": "Acquired disposed code",
+                        "format": "text"
+                    },
+                    "shares": {
+                        "label": "Shares",
+                        "format": "number"
+                    },
+                    "pricePerShare": {
+                        "label": "Price per share",
+                        "format": "number"
+                    },
+                    "transactionValue": {
+                        "label": "Transaction value",
+                        "format": "number"
+                    },
+                    "sharesOwnedAfter": {
+                        "label": "Shares owned after",
+                        "format": "number"
+                    },
+                    "filingUrl": {
+                        "label": "Filing URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
